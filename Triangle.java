@@ -1,4 +1,6 @@
 public class Triangle{
+	private int height;
+	private int width;
 	public Triangle(){
 		
 	}
