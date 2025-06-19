@@ -8,7 +8,7 @@ public class Student{
 	public String getName(){
 		return this.name;
 	}
-	public String getAge(){
+	public int getAge(){
 		return age;
 		
 	}
