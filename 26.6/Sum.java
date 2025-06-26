@@ -23,11 +23,18 @@ public class Sum{
 			// arr[i]=inp.nextInt();
 	// }
 	int arr[]={2,4,5,9,4,9};
-
+long RecStartI=System.nanoTime();
 	int sum=sumOfNumLoops(arr);
+	long RecEndI=System.nanoTime();
+	System.out.println("Exe Time for iterative: "+(RecEndI-RecStartI));
+	
 	System.out.println("Sum from loop: "+sum);
+	long RecStart=System.nanoTime();
 	int sumRc=sumOfNumRc(arr,arr.length-1);
-	System.out.println("Sum from rec: "+sumRc);
+	long RecEnd=System.nanoTime();
+	System.out.println("Exe Time for recursion: "+(RecEnd-RecStart));
+	System.out.println("Sum from Recursion: "+sumRc);
+	
 	
 }
 }
