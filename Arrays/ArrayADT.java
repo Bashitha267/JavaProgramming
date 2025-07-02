@@ -66,11 +66,20 @@ public class ArrayADT{
 		else {
 	array[index]=value;
 		}
-		
-		
+
 	}
 	public static int getLength(){
 		return size;
+	}
+	public static int search(int target){
+		if(size==0){
+			return -1;
+		}
+		for(int i=0;i<size;i++){
+			if(array[i]==target)
+				return i;
+		}
+		return -1;
 	}
 	
 	public static void main(String args[]){
@@ -83,7 +92,8 @@ public class ArrayADT{
 		delete(2);
 		setElement(1,15);
 		traverse();
-
+		System.out.println(search(15));
+			System.out.println(search(28));
 		
 	}
 }
