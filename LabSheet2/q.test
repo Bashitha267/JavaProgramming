@@ -1,0 +1,1 @@
+Write a program to generate all possible unique combinations of a given set of characters. For example, given the characters {'a', 'b'}, the program should generate the following combinations: " ", "a", "ab", "b". Your task is to write a program of your choice that generates all possible combinations of a given set of characters using recursive backtracking.
