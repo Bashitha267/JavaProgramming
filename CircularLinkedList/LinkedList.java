@@ -2,18 +2,17 @@ public class LinkedList {
     public Node tail;
     public int size;
 
-    public LinkedList() {
-        tail = null;
-    }
+    
 
     // insertion at begining
     public void add(int value) {
         Node node = new Node(value);
-        if (tail == null) {
+        if (tail==null) {
             tail = node;
             tail.next = tail;
             size++;
         } else {
+            node.next = tail.next;
             node.next = tail.next;
             tail.next = node;
             size++;

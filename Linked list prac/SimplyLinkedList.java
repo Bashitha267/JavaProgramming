@@ -147,6 +147,10 @@
 			
 		}
 	}
+	public void riverse(){
+		
+		
+	}
 	public int search(int value){
 		Node current=head;
 		int count=0;
